@@ -14,7 +14,7 @@ class KriteriaTOPSISController extends Controller
     public function kriteria_topsis()
     {
         $data = [
-            'title' => 'Metode SPK',
+            'title' => 'Testing Metode SPK',
             'sub_title' => 'TOPSIS',
             'menu' => 'Data Kriteria',
             'kriteria' => DB::table('kriteria_topsis')->select('*')->where('user_id', auth()->user()->id)->get()
